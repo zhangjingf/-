@@ -1,0 +1,11 @@
+1.解决ios上调用键盘时，无滚动条（手机上采用flex两头固定，中间伸缩布局时，底部块在调用键盘时，无法显示）
+setTimeout(function () {
+document.querySelector("body").scrollTop = 800;
+}, 500);
+2.区别安卓和IOS
+var isIPhone = navigator.appVersion.match(/iphone/gi);
+3. iOS上布局时，层级关系调整，不能直接使用，margin-top来调整块位置，通过定位及top可以调整位置关系。
+4. 解决移动端input placeholder中字体不垂直居中： line-height: normal;
+
+
+
